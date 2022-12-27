@@ -1,8 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int x,y,z,m;
+    int x,y,z;
     scanf("%d%d%d",&x,&y,&z);
-    m=(z-y)/x;
-    printf("%d",m);
+    printf("%d",(z-y)/x);
 }
