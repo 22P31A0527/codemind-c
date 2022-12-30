@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,s=0,r,x,i;
+    int n,x,y,s=0,r,q,t=0;
     scanf("%d",&n);
     x=n*n;
     while(n!=0)
@@ -10,15 +10,14 @@ int main()
         s=s*10+r;
         n=n/10;
     }
-    int p,t=0,y;
     y=s*s;
-    while(y>0)
+    while(y!=0)
     {
-        p=y%10;
-        t=t*10+p;
+        q=y%10;
+        t=t*10+q;
         y=y/10;
     }
-    if(t==x)
+    if(x==t)
     {
         printf("True");
     }
