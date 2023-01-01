@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    printf("%d",a*b/2);
+    int l,b;
+    scanf("%d%d",&l,&b);
+    printf("%d",l*b/2);
 }
