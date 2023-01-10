@@ -5,4 +5,3 @@ int main()
     scanf("%d%d%d",&x,&y,&z);
     printf("%d",(z-y)/x);
 }
-//z-y/x
