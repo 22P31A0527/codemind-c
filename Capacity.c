@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int t,s,b;
-    scanf("%d%d%d",&t,&s,&b);
-    printf("%d KB",2*t*s*b*512/1024);
+    int x,y,z;
+    scanf("%d%d%d",&x,&y,&z);
+    printf("%d KB",2*x*y*z*512/1024);
 }
