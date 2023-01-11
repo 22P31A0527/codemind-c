@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int n,m;
-    scanf("%d%d",&n,&m);
+    int x,y;
+    scanf("%d%d",&x,&y);
     printf("%d
-%d",m,n);
+%d",y,x);
 }
