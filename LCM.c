@@ -1,13 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,i;
-    scanf("%d%d",&a,&b);
-    for(i=1;i<=b;i++)
-    {
-        if(i*a%b==0)
-        {
-            printf("%d",i*a);
+    int l,u,i;
+    scanf("%d%d%d",&l,&u);
+    for(i=1;i<=u;i++){
+        if((l*i)%u==0){
+            printf("%d",l*i);
             break;
         }
     }
