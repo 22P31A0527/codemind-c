@@ -1,22 +1,31 @@
 #include<stdio.h>
+int fun(int n){
+    int j,p=1;
+    for(j=1;j<=n;j++)
+    {
+        p=p*j;
+    }
+    return p;
+}
 int main()
 {
-    int nu,n,i,r,s=0,p;
-    scanf("%d",&nu);
-    n=nu;
-    while(n!=0)
+    int n,i;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
     {
-        r=n%10;
-        p=1;
-        for(i=1;i<=r;i++)
+        int m,i,x;
+        scanf("%d",&m);
+        int q=m,r,s=0;
+        while(q!=0)
         {
-            p=p*i;
+            r=q%10;
+            x=fun(r);
+            s=s+x;
+            q=q/10;
         }
-        s=s+p;
-        n=n/10;
+        if(s==m) printf("Strong
+");
+        else printf("Not Strong
+");
     }
-    if(s==nu)
-    printf("The number %d is a strong number",nu);
-    else
-    printf("The number %d is not a strong number",nu);
 }
