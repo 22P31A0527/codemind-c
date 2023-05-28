@@ -10,26 +10,23 @@ int fun(int n)
 }
 int main()
 {
-    int n,i,x,y,c=0;
+    int n,x,m,i,c=0;
     scanf("%d",&n);
-    for(i=2;i<n/2;i++)
+    for(i=2;i<n;i++)
     {
         if(n%i==0)
         {
-            x=i;
-            if(fun(x)==1)
+            if(fun(i)==1)
             {
-               y=n/x;
-               if(fun(y)==1)
-               {
-                   c=1;
-                   printf("%d %d",x,y);
-                   break;
-               }
+                x=n/i;
+                if(fun(x)==1)
+                {
+                    printf("%d %d",i,x);
+                    c=1;
+                    break;
+                }
             }
-        
         }
-        
     }
     if(c==0) printf("-1");
 }
