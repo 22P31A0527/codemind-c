@@ -9,10 +9,7 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]%2!=0)
-        {
-            c++;
-        }
+        if(a[i]%2!=0) c++;
     }
     if(c<=2) printf("YES");
     else printf("NO");
