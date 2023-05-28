@@ -1,7 +1,7 @@
 #include<stdio.h>
 int fun(int n)
 {
-    int r,s=0;
+    int i,r,s=0;
     while(n!=0)
     {
         r=n%10;
@@ -16,6 +16,6 @@ int main()
     int n,m;
     scanf("%d",&n);
     m=fun(n);
-    if(m==1 || m==7)printf("True");
+    if(m==1 || m==7) printf("True");
     else printf("False");
 }
