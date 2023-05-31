@@ -3,5 +3,6 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    printf("%d",n*(n+1)/2);
+    int sum=n*(n+1)/2;
+    printf("%d",sum);
 }
