@@ -1,5 +1,5 @@
 #include<stdio.h>
-int prime(int n)
+int prime(int  n)
 {
     int i;
     for(i=2;i<=n/2;i++)
@@ -16,19 +16,19 @@ int main()
     {
         if(prime(i)==1)
         {
-            x=i;
+            x=i-n;
             break;
         }
     }
-    for(i=n;i>0;i--)
+    for(i=n-1;i>0;i--)
     {
         if(prime(i)==1)
         {
-            y=i;
+            y=n-i;
             break;
         }
     }
-    if((x-n)==(n-y)) printf("%d",x-n);
-    else if((x-n)<(n-y)) printf("%d",x-n);
-    else printf("%d",n-y);
+    if(x==y) printf("%d",x);
+    else if(x<y) printf("%d",x);
+    else printf("%d",y);
 }
