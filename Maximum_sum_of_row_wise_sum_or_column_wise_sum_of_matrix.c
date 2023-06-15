@@ -11,30 +11,30 @@ int main()
             scanf("%d",&a[i][j]);
         }
     }
-    int sum,max=0;
+    int s,max=0;
     for(i=0;i<n;i++)
     {
-        sum=0;
+        s=0;
         for(j=0;j<m;j++)
         {
-            sum=sum+a[i][j];
+            s=s+a[i][j];
         }
-        if(sum>max)
+        if(s>max)
         {
-            max=sum;
+            max=s;
         }
     }
     for(j=0;j<m;j++)
     {
-        sum=0;
+        s=0;
         for(i=0;i<n;i++)
         {
-            sum=sum+a[i][j];
+            s=s+a[i][j];
         }
-        if(sum>max)
+        if(s>max)
         {
-            max=sum;
+            max=s;
         }
     }
-    printf("%d",max);
+    printf("%d ",max);
 }
