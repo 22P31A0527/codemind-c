@@ -1,16 +1,4 @@
 #include<stdio.h>
-int fun(int n,int *a)
-{
-    int i;
-    for(i=0;i<n-1;i++)
-    {
-        if(a[i]>a[i+1])
-        {
-            return 0;
-        }
-    }
-    return 1;
-}
 int main()
 {
     int t,k;
@@ -24,23 +12,23 @@ int main()
         {
             scanf("%d",&a[i]);
         }
-        if(fun(n,a)==1)
+        int p=0;
+        for(i=0;i<n-1;i++)
         {
-            printf("0");
+            if(a[i]>a[i+1])
+            {
+                p=1;
+                break;
+            }
         }
+        if(p==0) printf("0");
         else
         {
             int max=0,min=100;
             for(i=0;i<n;i++)
             {
-                if(a[i]>max)
-                {
-                    max=a[i];
-                }
-                if(a[i]<min)
-                {
-                    min=a[i];
-                }
+                if(a[i]>max) max=a[i];
+                if(a[i]<min) min=a[i];
             }
             printf("%d
 ",max-min);
