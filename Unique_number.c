@@ -4,7 +4,7 @@ int main()
 {
     char s[100];
     scanf("%s",&s);
-    int c,d=0,i,j;
+    int i,j,d=0,c;
     for(i=0;i<strlen(s);i++)
     {
         c=0;
@@ -14,8 +14,8 @@ int main()
         }
         if(c!=1)
         {
-            printf("Not Unique Number");
             d=1;
+            printf("Not Unique Number");
             break;
         }
     }
