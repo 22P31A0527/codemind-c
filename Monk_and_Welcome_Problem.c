@@ -16,6 +16,9 @@ int main()
     for(i=0;i<n;i++)
     {
         c[i]=a[i]+b[i];
+    }
+    for(i=0;i<n;i++)
+    {
         printf("%d ",c[i]);
     }
 }
