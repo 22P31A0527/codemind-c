@@ -6,9 +6,7 @@ int main()
     int a[n];
     for(i=0;i<n;i++)
     {
-        int m;
-        scanf("%d",&m);
-        a[i]=m;
+        scanf("%d",&a[i]);
     }
     int w,c=0;
     scanf("%d",&w);
